@@ -6,7 +6,8 @@
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,8 @@
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@types/react": "^18.0.28",
+    "eslint": "^8.36.0",
+    "eslint-plugin-react": "^7.32.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^3.19.1",
