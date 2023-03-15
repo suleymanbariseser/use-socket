@@ -3,7 +3,7 @@
     "browser": true,
     "es6": true
   },
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "prettier"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -15,6 +15,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
+  "exclude": ["./rollup.config.js"],
   "plugins": ["react"],
   "rules": {
     "indent": ["error", "tab"],
